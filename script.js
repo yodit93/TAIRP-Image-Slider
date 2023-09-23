@@ -8,9 +8,9 @@ const slidesTablet = container.getAttribute('slides-display-t');
 const slidesMobile = container.getAttribute('slides-display-m');
 const dots = document.querySelectorAll('.dot');
 let slideToShow = 0;
-if (screen.width <= 768) {
+if (screen.width < 600) {
     slideToShow = parseInt(slidesMobile);
-} else if (screen.width > 768 && screen.width < 990) {
+} else if (screen.width >= 600 && screen.width < 990) {
     slideToShow = parseInt(slidesTablet);
 } else if (screen.width >= 990) {
     slideToShow = parseInt(slidesDesktop);
@@ -46,9 +46,9 @@ dots.forEach((dot) => {
 })
 
 window.addEventListener('resize', () => {
-    if (screen.width <= 768) {
+    if (screen.width < 600) {
         slideToShow = parseInt(slidesMobile);
-    } else if (screen.width > 768 && screen.width < 990) {
+    } else if (screen.width >= 600 && screen.width < 990) {
         slideToShow = parseInt(slidesTablet);
     } else if (screen.width >= 990) {
         slideToShow = parseInt(slidesDesktop);
