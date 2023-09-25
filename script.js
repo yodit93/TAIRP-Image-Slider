@@ -5,6 +5,9 @@ const slidesDesktop = container.getAttribute('slides-display-d');
 const slidesTablet = container.getAttribute('slides-display-t');
 const slidesMobile = container.getAttribute('slides-display-m');
 const dots = document.querySelectorAll('.dot');
+const menu = document.querySelector('.menu');
+const recipeList = document.querySelector('.recipe-list');
+const closeBtn = document.querySelector('.close-btn');
 
 let slideToShow = 0;
 if (screen.width < 600) {
@@ -102,11 +105,20 @@ const fetchCategory = (category) => {
 const navLinks = document.querySelectorAll('.recipe-list a');
 navLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
+        recipeList.classList.remove('show');
         clearCarousel();
         e.preventDefault();
         const category = link.textContent;
         fetchCategory(category);
     })
+})
+
+menu.addEventListener('click', () => {
+    recipeList.classList.add('show');
+});
+
+closeBtn.addEventListener('click', () => {
+    recipeList.classList.remove('show');
 })
 
 fetchCategory("Starter");
