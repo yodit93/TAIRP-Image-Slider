@@ -8,6 +8,76 @@ body {
     background-color: #000000;
 }
 
+.navigation {
+    height: 60px;
+    background-color: #2a2b2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu {
+    color: white;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation .recipe-list {
+    display: none;
+    font-size: 1.2rem;
+}
+
+.navigation .recipe-list.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #4b664b;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    z-index: 3;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+li a:hover {
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+}
+
+.recipe-list .close-btn {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+.recipe-list .close-btn:hover {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.navigation span {
+    color: white;
+    font-size: 1.7rem;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -62,7 +132,7 @@ main {
     color: white;
 }
 
-i {
+.btn i {
     font-size: 20px;
 }
 
@@ -82,8 +152,8 @@ i {
 }
 
 .dot {
-    width: 1rem;
-    height: 1rem;
+    width: 0.7rem;
+    height: 0.7rem;
     border: 2px solid white;
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
@@ -102,6 +172,17 @@ i {
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    .navigation .recipe-list {
+        display: flex;
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+
+    .menu, .close-btn {
+        display: none;
+    }
+
     
 }
 
