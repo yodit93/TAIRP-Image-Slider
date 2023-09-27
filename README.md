@@ -38,11 +38,11 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- Responsive design
-- Image slider
+- Responsive layout
+- Smooth Image slider
+- List of Recipe images
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- LIVE DEMO -->
 
@@ -50,7 +50,7 @@
 
 > Link to deployed project.
 
-- [Live Demo Link]()
+- [Live Demo Link](https://yodit93.github.io/TAIRP-Image-Slider/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
