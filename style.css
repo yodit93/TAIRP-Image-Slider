@@ -27,22 +27,23 @@ ul {
 }
 
 .navigation .recipe-list {
-    display: none;
-    font-size: 1.2rem;
-}
-
-.navigation .recipe-list.show {
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: #4b664b;
-    left: 0;
+    left: -100%;
     top: 0;
     bottom: 0;
     width: 60%;
     gap: 2rem;
     padding: 4rem 2rem;
     z-index: 3;
+    font-size: 1.2rem;
+    transition: left 0.5s ease-in-out;
+}
+
+.navigation .recipe-list.show {
+    left: 0;
 }
 
 li a {
@@ -84,12 +85,11 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 .carousel-container {
-    width: 90%;
-    height: 60%;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -110,6 +110,7 @@ main {
 .carousel-slide img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover;
 }
 
@@ -125,6 +126,7 @@ main {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -164,25 +166,36 @@ main {
 }
 
 @media screen and (min-width: 768px){
-    .carousel-slide {
-        max-width: 100%;
-    }
-
-    .btn {
-        width: 2.5rem;
-        height: 2.5rem;
+    .navigation {
+        height: 80px;
+        justify-content: space-around;
+        padding: 0;
     }
 
     .navigation .recipe-list {
-        display: flex;
-        gap: 1rem;
-        padding: 0 2rem;
+        flex-direction: row;
+        position: static;
+        background-color: #2a2b2a;
+        width: auto;
+        padding: 0;
     }
 
     .menu, .close-btn {
         display: none;
     }
 
-    
+    .carousel-container {
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .carousel-slide {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 3rem;
+        height: 3rem;
+    }   
 }
 
