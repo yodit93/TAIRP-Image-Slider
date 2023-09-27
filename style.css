@@ -95,7 +95,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   padding: 2rem;
   gap: 1rem;
 }
@@ -186,7 +185,7 @@ main {
   }
 
   .carousel-container {
-    width: 90%;
+    width: 80%;
     gap: 2rem;
   }
 
