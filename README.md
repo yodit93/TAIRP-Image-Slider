@@ -69,7 +69,7 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:
-``git clone `https://github.com/yodit93/Image-Slider.git`
+``https://github.com/yodit93/TAIRP-Image-Slider.git`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
