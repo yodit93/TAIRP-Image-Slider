@@ -20,7 +20,7 @@
 
 # 📖 Image Slider: <a name="about-project"></a>
 
-> Image Slider is a project that allows users to view images in a slideshow format. The images are displayed in a carousel format and the user can navigate through the images using the navigation buttons. It is fully responsive and can be viewed on any device.
+> Image Slider is a front end project that allows users to view images in a slideshow format. The images are displayed in a carousel format and the user can navigate through the images using the navigation buttons. It is fully responsive and can be viewed on any device.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
